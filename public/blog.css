@@ -1,0 +1,109 @@
+.blog-container
+{
+    background-color: #000000d9;;
+ 
+    padding: 20px;
+    margin-top:-15px;
+   
+}
+.post-container
+
+{
+    background-color: #908e8d;
+}
+#postHeading
+{
+    color: rgb(82, 0, 0);
+    background-color: #908e8d;
+  letter-spacing: 2px;
+}
+.blog-container h1
+{
+font-family: cursive;
+color: cornsilk;
+}
+.blog-container p
+{
+font-family: cursive;
+color: cornsilk;
+}
+#posts-collection div
+{
+    background:linear-gradient(rgb(199, 202, 11),rgb(214, 34, 10));
+    opacity: initial;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    box-shadow:5px 5px #716666;
+}
+    
+
+#posts-collection
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    color: rgba(255, 255, 255, 0.945);
+    
+}
+#posts-collection p{
+   
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+.auth
+{
+    float: right;
+    font-style: italic;
+}
+.mb-3
+{
+    padding: 10px;
+  
+}
+.container-fluid
+{
+    display:block;
+    width: 100px;
+    margin:auto;
+    padding:10px ;
+}
+nav
+{
+background-color: rgba(187, 172, 170, 0.651);
+}
+.items
+{
+    background-color: black;
+}
+ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+  padding: 10px;
+   
+    margin:5px;
+    
+  
+    
+}
+
+ul li a{
+    text-decoration:none ;
+    background-color: #b7b1b0;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+ul li :hover{
+    background-color: black;
+    color: #b7b1b0;
+  
+}
+

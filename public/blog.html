@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="blog.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <nav>
+      <div>
+        <ul>
+          <li><a href="#postHeading">Latest Posts</a></li>
+          <li><a href="#myBlog">Create your Own Blog</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+     
+    
+   <div class="blog-container" >
+           <center> <h1>Welcome To Bloggy!</h1></center>
+           <hr style="color: bisque;">
+            <p>Do you think that you have a writer within you? Amaze people out there with your writting skills.
+                Bloggy is a open platform where people can review on courses, can wirte about upcoming technology in the
+                market and What not! Give a headstart to your writting career with bloggy. Go give it a try and get started!</p>
+                <hr style="color: bisque;">
+                <div id='postHeading'>
+                  <center><h2>Latest Blogs..</h2></center>
+                </div>
+                <div class="post-container">
+                    <div class="row" id="posts-collection">
+                        <hr>
+                    </div>
+                </div>
+   </div>
+ 
+   <form id="myBlog">
+    <div class="container">
+        <div class="card m-4">
+            <div class="card-body">
+                <h2 class="pt-4">Createpost</h2>
+           
+ 
+          </div>  
+        <div class="mb-3">
+            <label for="Author" class="form-label">Author:</label>
+            <input type="name" class="form-control" id="author" placeholder="Author:" >
+          </div>
+    <div class="mb-3">
+      <label for="post-title" class="form-label" >Post-Title:</label>
+      <input type="text" class="form-control" id="postTitle" placeholder="Post-Title" >
+    </div>
+    <div class="mb-3">
+      <label for="post-date" class="form-label" >Date:</label>
+      <input type="date" class="form-control" id="date" placeholder="Date:" >
+    </div>
+    <div class="mb-3">
+      <label for="Post-Content" class="form-label" >Post-Content:</label>
+     <textarea  class="form-control" id="postCont" cols="30" rows="10"></textarea>
+    </div>
+        <div class="container-fluid">
+    <input type="submit" value="submit" id="submitBtn" class="btn btn-primary">
+
+  </div>
+  </div>
+        
+  </form>
+
+   
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script>
+      var firebaseConfig = {
+    apiKey: "AIzaSyB7Z1IwmIA0J2Mi2FSkdOu5coI9KixeRcM",
+    authDomain: "blogging-f5dbb.firebaseapp.com",
+    databaseURL: "https://blogging-f5dbb-default-rtdb.firebaseio.com",
+    projectId: "blogging-f5dbb",
+    storageBucket: "blogging-f5dbb.appspot.com",
+    messagingSenderId: "867034179983",
+    appId: "1:867034179983:web:1b56489b0999314cc683fa",
+    measurementId: "G-6L3ZYG5W0H"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+   </script>
+   <script src="./javascript/blog.js"></script>
+   <script src="./javascript/create.js"></script>
+   </html>
